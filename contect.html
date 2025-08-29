@@ -17,7 +17,7 @@
       class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10"
     >
       <h1 class="text-2xl">Greenden</h1>
-      <svg
+      <svg id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -49,7 +49,29 @@
         </li>
       </ul>
     </nav>
-
+       <!-- side nav -->
+    <section id="sidenav" style="width: 50%; height: 100vh; right: -50%;" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 ">
+      <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col items-center  gap-10 text-gray-600 md:flex">
+        <li>
+          <a class="hover:underline hover:text-black" href="./index.html"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./contect.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
     <!-- Contect Form -->
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -124,5 +146,6 @@
       </p>
       <p class="mt-5">&copy;2021 Greenden.com</p>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>
