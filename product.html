@@ -17,7 +17,8 @@
       class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10"
     >
       <h1 class="text-2xl">Greenden</h1>
-      <svg id="menuicon"
+      <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -32,21 +33,33 @@
         />
       </svg>
       <ul class="flex gap-5 text-gray-600 hidden md:flex">
-        <li><a class="hover:underline hover:text-black" href="./index.html">Home</a></li>
         <li>
-          <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+          <a class="hover:underline hover:text-black" href="./index.html"
+            >Home</a
+          >
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="./contect.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="./product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./contect.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
-       <!-- side nav -->
-    <section id="sidenav" style="width: 50%; height: 100vh; right: -50%;" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 ">
+    <!-- side nav -->
+    <section
+      id="sidenav"
+      style="width: 50%; height: 100vh; right: -50%"
+      class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+    >
       <div class="text-right p-5">
         <p id="closenav" class="inline cursor-pointer">X</p>
       </div>
-      <ul class="flex flex-col items-center  gap-10 text-gray-600 md:flex">
+      <ul class="flex flex-col items-center gap-10 text-gray-600 md:flex">
         <li>
           <a class="hover:underline hover:text-black" href="./index.html"
             >Home</a
@@ -67,12 +80,12 @@
     <!-- Product -->
     <section class="p-4 text-center">
       <h1 class="font-bold text-3xl">Our Products</h1>
-      <input
+      <input id="search"
         type="text"
         placeholder="Search for a product"
         class="w-150 border border-black p-1.5 mt-5"
       />
-      <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-5">
+      <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-5">
         <div>
           <img
             src="./img/best-seller_1.png"
@@ -142,7 +155,7 @@
             alt=""
             class="inline hover:shadow-xl transform hover:-translate-y-2"
           />
-          <h1>Flower plant</h1>
+          <h1>pratheep plant</h1>
           <p>$20</p>
         </div>
       </div>
@@ -157,6 +170,7 @@
       </p>
       <p class="mt-5">&copy;2021 Greenden.com</p>
     </section>
+    <script src="product.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
